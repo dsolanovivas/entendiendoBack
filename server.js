@@ -32,7 +32,14 @@ app.set("port", port);
 frases(app);
 
 server.listen(port, host, function () {
-  console.log("Aplicacion de NodeJs " + process.pid + " Iniciada...");
+  console.log(
+    "Aplicacion de NodeJs " +
+      process.pid +
+      " Iniciada... en el puerto: " +
+      port +
+      " y el host: " +
+      host
+  );
 });
 
 //ERRORES

@@ -16,7 +16,6 @@ const frases = require("./routes/fraseRoutes");
 config.config();
 
 const port = process.env.PORT || 3000;
-const host = process.env.HOST || "localhost";
 
 app.use(logger("dev"));
 app.use(express.json());
@@ -31,14 +30,9 @@ app.set("port", port);
 
 frases(app);
 
-server.listen(port, host, function () {
+server.listen(port, function () {
   console.log(
-    "Aplicacion de NodeJs " +
-      process.pid +
-      " Iniciada... en el puerto: " +
-      port +
-      " y el host: " +
-      host
+    "Aplicacion de NodeJs " + process.pid + " Iniciada... en el puerto: " + port
   );
 });
 

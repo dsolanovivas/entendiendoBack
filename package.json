@@ -4,7 +4,7 @@
   "description": "Backen de la aplicacion entendiendo",
   "main": "sever.js",
   "scripts": {
-    "start": "node sever.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "flutter",
